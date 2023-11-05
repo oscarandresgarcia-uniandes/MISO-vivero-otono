@@ -8,3 +8,8 @@ h1 {
 table {
   width: 70%;
 }
+footer{
+  text-align: center;
+  text-shadow: 2px 2px 4px #544f4f71;
+  font-weight: bold;;
+}
