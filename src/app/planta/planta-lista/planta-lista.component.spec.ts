@@ -25,7 +25,7 @@ describe('PlantaListaComponent', () => {
     component = fixture.componentInstance;
 
 
-    for(let i = 0; i < 25; i++) {
+    for(let i = 0; i < 3; i++) {
       const planta = new Planta(
         faker.number.int(100),
         faker.word.words(),
@@ -47,12 +47,16 @@ describe('PlantaListaComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have 25 tbody tr elements', () => {
-    expect(debug.queryAll(By.css('tbody tr'))).toHaveSize(25)
+  it('should have 4 tr elements in total (3 tr created + tr in theheader)', () => {
+    expect(debug.queryAll(By.css('tr'))).toHaveSize(4)
   });
 
-  it('should have 25 tbody th elements', () => {
-    expect(debug.queryAll(By.css('tbody th'))).toHaveSize(25)
+  it('should have 3 tbody tr elements', () => {
+    expect(debug.queryAll(By.css('tbody tr'))).toHaveSize(3)
+  });
+
+  it('should have 3 tbody th elements', () => {
+    expect(debug.queryAll(By.css('tbody th'))).toHaveSize(3)
   });
 
   it('should have the corresponding th with the text planta id', () => {
