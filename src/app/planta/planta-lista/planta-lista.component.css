@@ -1,0 +1,10 @@
+.table-dark, .table-dark th {
+  background-color: #333a3e;
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+  width: 70%;
+}
