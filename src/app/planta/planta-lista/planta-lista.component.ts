@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Planta } from '../planta';
 
 @Component({
   selector: 'app-planta-lista',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planta-lista.component.css']
 })
 export class PlantaListaComponent implements OnInit {
+  plantas: Array<Planta> = [];
 
   constructor() { }
 
